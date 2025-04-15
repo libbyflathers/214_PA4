@@ -1,0 +1,65 @@
+<section class="py-5 text-center container">
+		<h1 class = "announcement">Home Page</h1>
+		<h2 class = welcome> Welcome! Come and Learn all about Me!</h2>
+		<div class="row">
+			<div class="col-md-3 mb-3 mb-sm-0">
+			  <div class="card text-center">
+				<div class="card-body">
+				  <h5 class="card-title">Learn all about my girls!</h5>
+				  <p class="card-text">These girls have been with me since my first day at Conn and will always be there for me!</p>
+				  <a href=<%= profile_Girls_path %> class="btn btn-success">Learn Now!</a>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-3 mb-3 mb-sm-0">
+			  <div class="card text-center">
+				<div class="card-body">
+				  <h5 class="card-title">Learn about my CS Friends!</h5>
+				  <p class="card-text">These people I met Sophomore year and helped me stay and thrive in this major!</p>
+				  <a href=<%= profile_compscifriends_path %> class="btn btn-warning">Learn Now! </a>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-3 mb-3 mb-sm-0">
+				<div class="card text-center">
+				  <div class="card-body">
+					<h5 class="card-title">Learn about my Besties!</h5>
+					<p class="card-text">These people have been with me through thick and thin and I would not trade them for the world. </p>
+					<a href=<%= profile_bestfriends_path %> class="btn btn-danger">Learn Now! </a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-3 mb-3 mb-sm-0">
+				<div class="card text-center">
+				  <div class="card-body">
+					<h5 class="card-title">Learn about my Fam!</h5>
+					<p class="card-text">My family is my rock and I love them all so much!</p>
+					<a href=<%= profile_Family_path %> class="btn btn-primary">Learn Now! </a>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+          
+		  
+		  <div class="row">
+            
+			<div class="col-md" id = "image"><%= image_tag 'mask.JPG', type: 'image/png', class: "img-fluid rounded" %></div>
+			<div class="col-md" id = "image"><%= image_tag 'treebackground.JPG', type: 'image/png', class: "img-fluid rounded" %></div>
+			<div class="col-md" id = "image"><%= image_tag 'libbeach.JPG', type: 'image/png', class: "img-fluid rounded" %></div>
+
+		  </div>
+
+		<div class="d-grid gap-2 col-6 mx-auto">
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<a href="#" class="btn btn-success" id = "button">Previous Page</a>
+				<a href="<%= profile_Family_path %>" class="btn btn-info" id = "button"> Next Page</a>
+	   		</div>
+		</div>
+
+
+	</div>
+
+	<div class="alert alert-info" role="alert">
+		Thank you to all of the people mentioned for making me me!
+	</div>
+</section>

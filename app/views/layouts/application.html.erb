@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Rails Profile" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%= favicon_link_tag 'butterfly.png', :rel => 'shortcut icon', :type => 'image/png' %>
+    <%= favicon_link_tag 'butterfly.png', :rel => 'apple-touch-icon', :type => 'image/png' %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :main %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="<%= profile_index_path %>"><%= image_tag("butterfly.png", alt:"PROFILE", :class => "navbar-icon")%> Libby!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="<%= profile_Family_path %>"><i class="bi bi-flower1"></i> Family</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= profile_bestfriends_path %>"><i class="bi bi-gift-fill"></i> Besties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= profile_compscifriends_path %>"><i class="bi bi-pc-display-horizontal"></i> CS Friends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= profile_Girls_path %>"><i class="bi bi-envelope-open-heart"></i> The Girls</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
+  
+
+</body>
+</html>

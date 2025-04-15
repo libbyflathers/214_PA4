@@ -1,0 +1,41 @@
+<section class="py-5 text-center container">
+		<h1 class = "announcement">The Girls </h1>
+		<div class ="col-md-10 mb-3 mb-sm-0 text-center center">
+		<div class = "table-responsive-md">
+		<table class="table table-info table-striped table-bordered border-primary">
+			<tbody >
+			  <tr>
+				<th scope="row" class="friend align-middle">Victoria</th>
+				<td><%= image_tag 've.JPEG', type: 'image/png', class: "img-fluid rounded" %></td>
+				<td colspan = "2" class = "information align-middle">She was my freshman roommate and our friendship has only grown stronger since then</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="friend align-middle">Crystal</th>
+				<td colspan = "2" class = "information align-middle">Crystal lived down the hall and we grew close by taking COM 110 together</td>
+				<td><%= image_tag 'crys.JPG', type: 'image/png', class: "img-fluid rounded" %></td>
+
+			  </tr>
+			  <tr>
+				<th scope="row"class = "friend align-middle">Izzy</th>
+				<td><%= image_tag 'iz.JPEG', type: 'image/png', class: "img-fluid rounded" %></td>
+				<td colspan = "2" class = "information align-middle ">Izzy I met after the other two but quickly became one of my favorite people ever</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
+
+		  <div class="row">
+			<div class="col-md image"><%= image_tag 'girls1.jpg', type: 'image/png', class: "img-fluid rounded" %></div>
+			<div class="col-md image"><%= image_tag 'girls100.jpg', type: 'image/png', class: "img-fluid rounded" %></div>
+			<div class="col-md image"><%= image_tag 'girls2.JPG', type: 'image/png', class: "img-fluid rounded" %></div>
+		  </div>
+
+		<div class="d-grid gap-2 col-6 mx-auto">
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<a href="<%= profile_compscifriends_path %>" class="btn btn-success" id = "button">Previous Page</a>
+				<a href="<%= profile_index_path %>" class="btn btn-info" id = "button"> Next Page</a>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>

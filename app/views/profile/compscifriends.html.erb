@@ -1,0 +1,32 @@
+<section class="py-5 text-center container">
+	<h1 class = "announcement"> Senior CS Friends
+
+	<span class="badge text-bg-info">New</span>
+	</h1>
+
+	  <div class="card">
+		<div class="card-header">
+		  Quote
+		</div>
+		<div class="card-body">
+		  <blockquote class="blockquote mb-0">
+			<p>Dont cry because its over, smile because it happened</p>
+			<footer class="blockquote-footer">Dr.Seuss <cite title="Source Title">Kids Can Fly</cite></footer>
+		  </blockquote>
+		</div>
+	  </div>
+
+	  
+	<figure class="figure">
+		<%= image_tag 'Gradfriends.JPG', type: 'image/png', class: "image" %>
+		<figcaption class="figure-caption text-end">Me and my friends at their graduation last May</figcaption>
+	  </figure>
+		
+
+	<div class="d-grid gap-2 col-6 mx-auto">
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<a href="<%= profile_bestfriends_path %>" class="btn btn-success" id = "button">Previous Page</a>
+			<a href="<%= profile_Girls_path %>" class="btn btn-info" id = "button"> Next Page</a>
+		</div>
+	</div>
+</section>
